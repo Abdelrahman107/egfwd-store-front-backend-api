@@ -44,7 +44,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 | GET | /api/orders | yes | - | returns list of  all orderss.
 | GET  | /api/orders/:order_id/get-products-order | yes | - | return list of products in order id.
 | POST  | /api/orders/| yes |{ "status": "active or complete", "user_id":"string"}| creates a new order and return the order
-| PUT  | /api/orders/update-status-complete| yes |-| updates order status to complete and returns that order
+| PUT  | /api/orders/:id/update-status-complete| yes |-| updates order status to complete and returns that order
 | GET  | /api/orders/:user_id/get-active-orders |yes | - | return list of active orders for user id
 | GET  | /api/orders/:user_id/get-complete-orders |yes | - | return list of complete orders for user id
 | POST | /api/orders/:product_id/:order_id/add-product-to-order |yes | - | adds a product id to order id 
