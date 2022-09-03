@@ -95,11 +95,26 @@ JWT_SECRET=jwt-password
 ```
 
 ## Package Installation and How to Run the Project
-1. Install required packages
+1. make a file named .env and copy the content of env_example.txt to it
+```bash
+PORT=3000
+NODE_ENV=dev
+POSTGRES_HOST=127.0.0.1
+POSTGRES_DB=store
+POSTGRES_USER=storeuser
+POSTGRES_PASSWORD=12345678
+POSTGRES_PORT=5432
+POSTGRES_DB_TEST=storetest
+BCRYPT_PASSWORD=cloud-password
+SALT_ROUNDS=10
+JWT_SECRET=jwt-password
+```
+
+2. Install required packages
 ```bash
 npm install
 ```
-2. run database migration
+3. run database migration
 ```bash
 db-migrate reset
 db-migrate up
