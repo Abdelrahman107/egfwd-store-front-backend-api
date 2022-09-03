@@ -32,7 +32,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 | GET  | /api/users/:id | yes | - | return a user by id
 | DELETE | /api/users/:id | yes | - | deletes a user by id and returns the user.
 | POST  | /api/users/| no | { "first_name": "string", "last_name": "string", "email":"string","password":"string"} | creates a new user and returns the user
-| POST  | /api/users/:id/authenticate | no |{"email":"string","password":"string"} | authenicate user and returns a user with token
+| POST  | /api/users/authenticate | no |{"email":"string","password":"string"} | authenicate user and returns a user with token
 | PUT  | /api/users/| yes | { "id":"string",first_name": "string", "last_name": "string", "email":"string","password":"string"} | updates a user and returns that user
 
 #### Orders
