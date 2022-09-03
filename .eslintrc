@@ -1,0 +1,32 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "rules": {
+     "prettier/prettier": 2 ,
+      "no-use-before-define": ["error", { "functions": true, "classes": true }],
+      "no-var": "error",
+      "no-unused-vars":"off",
+      "prefer-const": "error"
+    
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 6,
+       "allowImportExportEverywhere": true
+
+    },
+    
+    "env": {
+      "node": true,
+      "es6": true,
+      "jasmine": true
+    }
+    
+}
